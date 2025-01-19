@@ -1,0 +1,54 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.env
+
+*.sh
+
+# Virtual Environment
+venv/
+env/
+
+# IDEs and Editors
+.vscode/
+*.swp
+*.swo
+.idea/
+*.iml
+
+# Logs
+*.log
+
+# Database
+*.db
+*.sqlite3
+
+# Byte-compiled / optimized / DLL files
+*.egg
+*.egg-info/
+dist/
+build/
+*.so
+
+# Python Packaging
+*.wheel
+
+# Test and Coverage
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+.cache
+nosetests.xml
+pytest_cache/
+.pytest_cache/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# FastAPI Static Files
+static/

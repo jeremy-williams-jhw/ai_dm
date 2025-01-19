@@ -1,0 +1,144 @@
+{
+    "basics": {
+      "name": "Jax Driftrune",
+      "class": {
+        "primary": "Sorcerer",
+        "secondary": "Bard",
+        "level": 1
+      },
+      "race": "Half-Elf",
+      "background": "",
+      "experiencePoints": 725,
+      "player": "BillyBul"
+    },
+    "attributes": {
+      "strength": {
+        "score": 11,
+        "modifier": 0
+      },
+      "dexterity": {
+        "score": 15,
+        "modifier": 2
+      },
+      "constitution": {
+        "score": 17,
+        "modifier": 3
+      },
+      "intelligence": {
+        "score": 17,
+        "modifier": 3
+      },
+      "wisdom": {
+        "score": 12,
+        "modifier": 1
+      },
+      "charisma": {
+        "score": 20,
+        "modifier": 5
+      }
+    },
+    "combat": {
+      "armorClass": 12,
+      "initiative": 2,
+      "hitPoints": {
+        "maximum": 17,
+        "current": null,
+        "temporary": null
+      },
+      "hitDice": "1d6 + 1d8",
+      "deathSaves": {
+        "successes": 0,
+        "failures": 0
+      }
+    },
+    "proficiencies": {
+      "armor": ["Light Armor"],
+      "weapons": ["Simple Weapons"],
+      "languages": ["Common", "Elvish"],
+      "skills": [
+        { "name": "Acrobatics", "ability": "DEX", "modifier": 2 },
+        { "name": "Animal Handling", "ability": "WIS", "modifier": 1 },
+        { "name": "Arcana", "ability": "INT", "modifier": 3 },
+        { "name": "Athletics", "ability": "STR", "modifier": 0 },
+        { "name": "Deception", "ability": "CHA", "modifier": 5 },
+        { "name": "History", "ability": "INT", "modifier": 3 },
+        { "name": "Insight", "ability": "WIS", "modifier": 1 },
+        { "name": "Intimidation", "ability": "CHA", "modifier": 5 },
+        { "name": "Investigation", "ability": "INT", "modifier": 3 },
+        { "name": "Medicine", "ability": "WIS", "modifier": 1 },
+        { "name": "Nature", "ability": "INT", "modifier": 3 },
+        { "name": "Perception", "ability": "WIS", "modifier": 1 },
+        { "name": "Performance", "ability": "CHA", "modifier": 5 },
+        { "name": "Persuasion", "ability": "CHA", "modifier": 5 },
+        { "name": "Religion", "ability": "INT", "modifier": 3 },
+        { "name": "Sleight of Hand", "ability": "DEX", "modifier": 2 },
+        { "name": "Stealth", "ability": "DEX", "modifier": 2 },
+        { "name": "Survival", "ability": "WIS", "modifier": 1 }
+      ]
+    },
+    "features": {
+      "racial": {
+        "darkvision": "60 ft.",
+        "feyAncestry": "Advantage on saving throws against being charmed, and magic can't put you to sleep",
+        "skillVersatility": "You gain proficiency in two skills of your choice"
+      },
+      "class": {
+        "sorcerer": ["Core Sorcerer Traits", "Spellcasting", "Innate Sorcery"],
+        "bard": ["Core Bard Traits", "Bardic Inspiration", "Spellcasting"]
+      }
+    },
+    "spellcasting": {
+      "ability": "CHA",
+      "saveDC": 15,
+      "attackBonus": 7,
+      "spells": {
+        "cantrips": [
+          { "name": "Ray of Frost", "source": "Sorcerer", "attackBonus": 7, "damage": "1d8 Cold", "range": "60 ft." },
+          { "name": "Light", "source": "Sorcerer" },
+          { "name": "Gust", "source": "Sorcerer" },
+          { "name": "Mold Earth", "source": "Sorcerer" },
+          { "name": "Mage Hand", "source": "Bard" },
+          { "name": "Minor Illusion", "source": "Bard" }
+        ],
+        "level1": [
+          { "name": "Chromatic Orb", "source": "Sorcerer" },
+          { "name": "Shield", "source": "Sorcerer" },
+          { "name": "Cure Wounds", "source": "Bard" },
+          { "name": "Charm Person", "source": "Bard" },
+          { "name": "Unseen Servant", "source": "Bard" },
+          { "name": "Speak with Animals", "source": "Bard" }
+        ]
+      }
+    },
+    "equipment": {
+      "weapons": [
+        { "name": "Shortbow, +1", "attackBonus": 5, "damage": "1d6+3 Piercing", "properties": "Simple, Ammunition, Range, Two-Handed, Ver, Range (80/320)" },
+        { "name": "Ray of Frost", "attackBonus": 7, "damage": "1d8 Cold" },
+        { "name": "Unarmed Strike", "attackBonus": 2, "damage": "1 Bludgeoning" }
+      ],
+      "carried": [
+        { "name": "Quarterstaff, +1", "quantity": 1, "weight": 4 },
+        { "name": "Shortbow, +1", "quantity": 1, "weight": 2 },
+        { "name": "Potion of Healing", "quantity": 1, "weight": 0.5 },
+        { "name": "Bag of Holding", "quantity": 1, "weight": 5 },
+        { "name": "Dagger", "quantity": 4, "weight": 1 },
+        { "name": "Spear", "quantity": 2, "weight": 3 }
+      ],
+      "other": {
+        "weightCarried": 135.5,
+        "weightEncumbered": 165,
+        "pushDragLift": 330
+      }
+    },
+    "appearance": {
+      "gender": "Male",
+      "age": 28,
+      "size": "Medium",
+      "height": "6'3\"",
+      "weight": 175,
+      "faith": "Chaotic Good",
+      "skin": "Ivory",
+      "eyes": "Ice Blue",
+      "hair": "Black"
+    }
+  }
