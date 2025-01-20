@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from models import CharacterCreate, Character, ChatHistory
+from models import CharacterCreate, Character
 from database import SessionLocal
 
 
@@ -112,6 +112,3 @@ def add_chat_message(db: Session, message_from: str, message_to: str, content: s
     db.add(new_message)
     db.commit()
     return new_message
-
-def get_chat_history(db: Session):
-    return db.query(ChatHistory).all()

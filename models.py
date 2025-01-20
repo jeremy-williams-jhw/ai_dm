@@ -10,12 +10,6 @@ from datetime import datetime
 Base = declarative_base()
 
 
-class ChatHistory(Base):
-    __tablename__ = "chat_histories"
-
-    id = Column(Integer, primary_key=True, index=True)
-    message_id = Column(Integer, ForeignKey("chat_messages.id"))
-    message = relationship("ChatMessage", lazy="joined")
 
 class ChatMessage(Base):
     __tablename__ = "chat_messages"

@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Depends
 from sqlalchemy.orm import Session
 from database import SessionLocal
-from crud import create_character, update_character, add_chat_message, get_chat_history
+from crud import create_character, update_character, add_chat_message
 from models import CharacterCreate, ChatMessageRead, ChatRequest
 from chat import chat_with_gpt
 import json
@@ -27,10 +27,6 @@ def edit_character_endpoint(character_id: int, updates: dict, db: Session = Depe
 @app.post("/chats/")
 def add_chat_message_endpoint(chat_message: ChatMessageRead, db: Session = Depends(get_db)):
     return add_chat_message(db, chat_message.message_from, chat_message.message_to, chat_message.content)
-
-@app.get("/chats/")
-def get_chat_history_endpoint(db: Session = Depends(get_db)):
-    return get_chat_history(db)
 
 @app.post("/chat/gpt/")
 async def chat_gpt(request: ChatRequest):

@@ -8,8 +8,6 @@ load_dotenv()
 # OpenAI API key
 client = OpenAI(api_key = os.getenv("OPENAI_API_KEY"))
 
-
-
 # Chat function to interact with ChatGPT
 def chat_with_gpt(messages, model="gpt-3.5-turbo"):
     """
@@ -18,6 +16,7 @@ def chat_with_gpt(messages, model="gpt-3.5-turbo"):
     :param model: OpenAI model to use (default: gpt-4).
     :return: The response from the API.
     """
+    print(os.getenv("OPENAI_API_KEY"))
     
     try:
         response = client.chat.completions.create(
@@ -25,6 +24,6 @@ def chat_with_gpt(messages, model="gpt-3.5-turbo"):
             # messages=[message.dict() for message in messages]
             messages=messages
         )
-        return response["choices"][0]["message"]["content"]
+        return response.choices[0].message
     except Exception as e:
         return f"An error occurred: {e}"

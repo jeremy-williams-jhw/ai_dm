@@ -1,0 +1,13 @@
+{
+    "model": "gpt-3.5-turbo",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant for D&D campaigns."
+      },
+      {
+        "role": "user",
+        "content": "Describe a mysterious cave entrance."
+      }
+    ]
+  }
